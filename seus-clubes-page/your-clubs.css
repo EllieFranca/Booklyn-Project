@@ -1,0 +1,17 @@
+@import url(https://fonts.googleapis.com/css?family=Jacques+Francois|Inter|Bree+Serif:b);
+@font-face {
+   font-family:'bree-serif', serif;
+   font-family:'inter', serif;
+   font-family:'francois',serif;
+   src: url(https://fonts.googleapis.com/css?family=Jacques+Francois|Inter|Bree+Serif:b);
+}
+:root{
+   --background-color: #fbfcff;
+   --dark-blue:#315db9;
+   --light-blue:#b9d0ff;
+   --dark-purple:#6e3d93;
+   --darker-purple:#3e1467;
+}
+#bree-serif{
+   font-family:'bree-serif',serif;
+}
