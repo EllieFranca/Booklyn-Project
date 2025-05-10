@@ -1,0 +1,7 @@
+:root{
+   --background-color: #fbfcff;
+   --dark-blue:#315db9;
+   --light-blue:#b9d0ff;
+   --dark-purple:#6e3d93;
+   --darker-purple:#3e1467; 
+}
