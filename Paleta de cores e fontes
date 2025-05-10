@@ -10,5 +10,5 @@
    --darker-purple:#3e1467;
    --site-font:'Jacques Francois';
    --title-font:'Bree Serif';
-   --index-font:'Inter'
+   --index-font:'Inter';
 }
