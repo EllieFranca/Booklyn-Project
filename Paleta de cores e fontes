@@ -1,7 +1,14 @@
+@import url(https://fonts.googleapis.com/css2?family=Bree+Serif);
+@import url(https://fonts.googleapis.com/css2?family=Inter);
+@import url(https://fonts.googleapis.com/css2?family=Jacques+Francois);
+
 :root{
    --background-color: #fbfcff;
    --dark-blue:#315db9;
    --light-blue:#b9d0ff;
    --dark-purple:#6e3d93;
-   --darker-purple:#3e1467; 
+   --darker-purple:#3e1467;
+   --site-font:'Jacques Francois';
+   --title-font:'Bree Serif';
+   --index-font:'Inter'
 }
