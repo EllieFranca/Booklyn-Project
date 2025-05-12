@@ -8,18 +8,26 @@
    --light-blue:#b9d0ff;
    --dark-purple:#6e3d93;
    --darker-purple:#3e1467;
+   --dark-blue-transparency: #315cb91A;
    --site-font:'Jacques Francois';
    --title-font:'Bree Serif';
    --index-font:'Inter'
 }
-#bree-serif{
-   font-size: 40px;
-   font-family: var(--title-font);
-   color: #6e3d93;
+
+body{
+   margin: 0;
+   padding: 0; 
+   background-color: var(--background-color)
 }
-#inter{
-   font-family: var(--index-font);
+.sidebar{
+   background-color: var(--dark-purple);
+   height: 100vh;
+   width: 120px;
 }
-#jacques-francois{
-   font-family: var(--nome_site-font);
+.searchbar{
+   display:flex;
+   border:none;
+   background-color: var(--dark-blue-transparency);
+   font-family: var(--index-font); font-: var(--dark-purple);
+   border-radius: 100px;
 }
