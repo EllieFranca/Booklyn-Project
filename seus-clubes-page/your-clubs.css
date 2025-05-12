@@ -28,6 +28,6 @@ body{
    display:flex;
    border:none;
    background-color: var(--dark-blue-transparency);
-   font-family: var(--index-font); font-: var(--dark-purple);
+   font-family: var(--index-font);
    border-radius: 100px;
 }
