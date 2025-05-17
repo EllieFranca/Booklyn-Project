@@ -25,24 +25,23 @@ body{
    width: 200px;
    display:flex;
    flex-direction: column;
-}
-.logo{
-   border: 5px white;
-   font-family: var(--site-font);
-   color: white;
-   font-size: 30px;
-   display: flex;
-   justify-content: center;
    align-items: center;
-   width: 180px;
-   height: 100px;
-   border: white;
-   background-color: var(--dark-blue);
+}
+#logo{
+   margin-top: 50px;
+   width: 170px;
 }
 .index{
    display: flex;
    flex-direction: column;
    font-family: var(--index-font);
+   color: white;
+}
+ul{
+   list-style: inside;
+}
+a{
+   text-decoration: none;
    color: white;
 }
 .searchbar{
@@ -71,11 +70,4 @@ input{
 #pesquisar::placeholder{
    color: var(--dark-purple);
    font-size: 115%;
-}
-ul{
-   list-style: inside;
-}
-a{
-   text-decoration: none;
-   color: white;
 }
