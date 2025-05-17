@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="child-reading-book_icon-icons.com_49243.ico" type="image/x-icon">
+    <title>Login Page</title>
+</head>
+<body>
+
+    <div class="container-formulario" id="div-cadastro">
+        <article class="title">
+            <h1>Cadastro</h1>
+        </article>
+        <form id="form1" class="frm" action="">
+            <section class="input-section">
+                <label for="user" class="label-nome">E-mail: </label>
+                <input type="email" name="email" id="email1" class="input-form" placeholder="Digite seu e-mail" required>
+            </section>
+            <section class="input-section">
+                <label for="senha" class="label-nome">Senha: </label>
+                <input type="password" name="password" id="password1" class="input-form" placeholder="Digite sua senha" required>
+            </section>
+            <label for="rememberMe" class="rememberMe">
+                <input type="checkbox" id="rememberMe" name="rememberMe">
+                <span class="rememberMe-text">Lembre-se de mim</span>
+            </label>
+        
+            <section class="input-section" id="button-section1">
+                <button type="submit" class="submit-button" id="submit-button1">Cadastrar</button>
+            </section>
+
+            <div class="form-link-container">
+                <p>Já possui cadastro? <a href="#" id="login-link1" class="form-link">Faça login</a></p>
+            </div>
+        </form>
+    </div>
+
+    <div class="container-formulario divOculta" id="div-login">
+        <article class="title">
+            <h1>Login</h1>
+        </article>
+        <form id="form2" class="frm" action="">
+            <section class="input-section">
+                <label for="user" class="label-nome">E-mail: </label>
+                <input type="email" name="email" id="email2" class="input-form" placeholder="Digite seu e-mail" required>
+            </section>
+            <section class="input-section">
+                <label for="senha" class="label-nome">Senha: </label>
+                <input type="password" name="password" id="password2" class="input-form" placeholder="Digite sua senha" required>
+            </section>
+        
+            <section class="input-section" id="button-section2">
+                <button type="submit" class="submit-button" id="submit-button2">Logar</button>
+            </section>
+
+            <div class="form-link-container">
+                <p><a href="#" id="login-link2" class="form-link">Esqueci a minha senha</a></p>
+            </div>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
