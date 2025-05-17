@@ -1,0 +1,145 @@
+@import url(https://fonts.googleapis.com/css2?family=Bree+Serif);
+@import url(https://fonts.googleapis.com/css2?family=Inter);
+@import url(https://fonts.googleapis.com/css2?family=Jacques+Francois);
+
+:root{
+   --background-color: #fbfcff;
+   --dark-blue:#315db9;
+   --light-blue:#b9d0ff;
+   --dark-purple:#6e3d93;
+   --darker-purple:#3e1467;
+   --site-font:'Jacques Francois';
+   --title-font:'Bree Serif';
+   --index-font:'Inter';
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+}
+
+.container-formulario{
+    border: 3.2px solid var(--dark-purple);
+    border-radius: 7px;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    max-width: 90%;
+    gap: 17px;
+    display: flex;
+    flex-direction: column;  
+    padding-bottom: 12em;
+}
+
+.title h1{
+    color: var(--dark-purple);
+    display: flex;
+    justify-content: center;
+    font-family: var(--title-font);
+    font-size: 1.80em;
+    font-weight: 500;
+    padding: 0em;
+    margin: 16px;
+    cursor: default;
+}
+
+.container-formulario .frm .input-section{
+    color: var(--dark-purple);
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 10px 0px;
+}
+
+.container-formulario .frm .input-section .label-nome{
+    font-family: var(--index-font);
+    font-size: 0.8em;
+    font-weight: 600;
+}
+
+.container-formulario .frm .input-section .input-form {
+    letter-spacing: 0.5px;
+    padding: 8px;
+    border: 1.50px solid var(--dark-purple);
+    border-radius: 6.50px;
+    width: calc(100% - 22px); /* Ajusta a largura para considerar o padding e a borda */
+}
+
+.input-form::placeholder {
+    color: #6e3d93a8;
+    font-size: 0.9em;
+}
+
+.input-form:focus {
+    box-shadow: 0 0 0 1px var(--darker-purple);
+    background-color: var(--background-color);
+    outline: none;
+}
+
+.container-formulario .frm .rememberMe{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 5px 0px;
+    cursor: pointer;
+    accent-color: var(--dark-blue);
+}
+
+.container-formulario .frm .rememberMe .rememberMe-text{
+    color: var(--dark-purple);
+    font-family: var(--index-font);
+    font-size: 0.72em;
+    cursor: pointer;
+}
+
+.input-section .submit-button{
+    background: #3e72e2;
+    border-color: #3e72e2;
+    color: var(--background-color);
+    font-family: var(--index-font);
+    cursor: pointer;
+    border-radius: 6.50px;
+    padding: 6px 0px;
+}
+
+.submit-button:hover {
+    background-color: var(--dark-blue);
+    border-color: var(--dark-blue);
+    color: #ffffff;
+}
+
+.form-link-container{
+    font-family: var(--index-font);
+    font-size: 0.80em;
+    color: var(--darker-purple);
+    cursor: default;
+}
+
+.form-link-container a{
+    color: var(--dark-blue);
+    font-family: var(--index-font);
+}
+
+.form-link-container a:hover{
+    color: var(--light-blue);
+    cursor: pointer;
+}
+
+/* ----- */
+
+#div-login{
+    padding-bottom: 13.85em;
+}
+
+/* ----- */
+
+.divOculta{
+    display: none;
+}
