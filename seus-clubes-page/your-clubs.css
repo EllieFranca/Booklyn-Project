@@ -17,7 +17,8 @@
 body{
    margin: 0;
    padding: 0; 
-   background-color: var(--background-color)
+   background-color: var(--background-color);
+   text-decoration: none;
 }
 .sidebar{
    background-color: var(--dark-purple);
@@ -26,8 +27,16 @@ body{
 }
 .searchbar{
    display:flex;
+
    border:none;
    background-color: var(--dark-blue-transparency);
    font-family: var(--index-font);
    border-radius: 100px;
+}
+.search-icon{
+   border:none;
+   
+}
+input.searchbar::placeholder{
+   color: var(--dark-purple);
 }
