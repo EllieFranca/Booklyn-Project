@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="child-reading-book_icon-icons.com_49243.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css ">
     <title>Login Page</title>
 </head>
 <body>
@@ -15,25 +17,31 @@
         </article>
         <form id="form1" class="frm" action="">
             <section class="input-section">
-                <label for="user" class="label-nome">E-mail: </label>
+                <label for="nome1" class="label-nome" id="label-nome">Nome: </label>
+                <input type="text" name="text" id="nome1" class="input-form" placeholder="Digite um nome para o seu perfil" required>
+            </section>
+            <section class="input-section">
+                <label for="email1" class="label-nome" id="label-email">E-mail: </label>
                 <input type="email" name="email" id="email1" class="input-form" placeholder="Digite seu e-mail" required>
             </section>
             <section class="input-section">
-                <label for="senha" class="label-nome">Senha: </label>
-                <input type="password" name="password" id="password1" class="input-form" placeholder="Digite sua senha" required>
+                <label for="password1" class="label-nome" id="label-senha">Senha: </label>
+                <div class="password-icon" id="password-icon-cad">
+                    <input type="password" name="password" id="password1" class="input-form" placeholder="Digite sua senha" required>
+                    <i class="fa fa-eye" aria-hidden="true"></i>
+                </div>
             </section>
-            <label for="rememberMe" class="rememberMe">
-                <input type="checkbox" id="rememberMe" name="rememberMe">
-                <span class="rememberMe-text">Lembre-se de mim</span>
-            </label>
         
             <section class="input-section" id="button-section1">
-                <button type="submit" class="submit-button" id="submit-button1">Cadastrar</button>
+                <button type="submit" class="submit-button" id="submit-button1" onclick="cadastrar(event)">Cadastrar</button>
             </section>
 
             <div class="form-link-container">
                 <p>Já possui cadastro? <a href="#" id="login-link1" class="form-link">Faça login</a></p>
             </div>
+
+            <div id="msgErro"></div>
+            <div id="msgSucesso"></div>
         </form>
     </div>
 
@@ -43,20 +51,54 @@
         </article>
         <form id="form2" class="frm" action="">
             <section class="input-section">
-                <label for="user" class="label-nome">E-mail: </label>
+                <label for="email2" class="label-nome" id="label-email2">E-mail: </label>
                 <input type="email" name="email" id="email2" class="input-form" placeholder="Digite seu e-mail" required>
             </section>
             <section class="input-section">
-                <label for="senha" class="label-nome">Senha: </label>
-                <input type="password" name="password" id="password2" class="input-form" placeholder="Digite sua senha" required>
+                <label for="password2" class="label-nome" id="label-senha2">Senha: </label>
+                <div class="password-icon" id="password-icon-log">
+                    <input type="password" name="password" id="password2" class="input-form" placeholder="Digite sua senha" required>
+                    <i class="fa fa-eye" aria-hidden="true"></i>
+                </div>
             </section>
         
             <section class="input-section" id="button-section2">
-                <button type="submit" class="submit-button" id="submit-button2">Logar</button>
+                <button type="submit" class="submit-button" id="submit-button2" onclick="logar(event)">Logar</button>
+            </section>
+            
+            <div class="form-link-container">
+                <p>Não possui cadastro? <a href="#" id="cadastro-link1" class="form-link">Fazer cadastro</a></p>
+            </div>
+            <div class="form-link-container">
+                <p><a href="#" id="cadastro-link2" class="form-link">Esqueci a minha senha</a></p>
+            </div>
+
+            <div id="msgErroLog"></div>
+            <div id="msgSucessoLog"></div>
+
+        </form>
+    </div>
+
+    <div class="container-formulario divOculta" id="div-esqueciSenha">
+        <article class="title">
+            <h1>Recuperar Senha</h1>
+        </article>
+        <form id="form3" class="frm" action="">
+            <section class="input-section">
+                <label for="email3" class="label-nome">E-mail: </label>
+                <input type="email" name="email" id="email3" class="input-form" placeholder="Digite seu e-mail" required>
+            </section>
+        
+            <section class="input-section" id="button-section3">
+                <button type="submit" class="submit-button" id="submit-button3" onclick="recuperarSenha(event)">Enviar</button>
             </section>
 
             <div class="form-link-container">
-                <p><a href="#" id="login-link2" class="form-link">Esqueci a minha senha</a></p>
+                <p>Não possui cadastro? <a href="#" id="esqueciSenha-link1" class="form-link">Fazer cadastro</a></p>
+            </div>
+
+            <div id="msgSenhRecup" onclick="mostrarLogin(limparCampos())">
+                <a href="#" id="login-link2" class="form-link">Faça login</a>
             </div>
         </form>
     </div>

@@ -31,6 +31,9 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     width: 300px;
     max-width: 90%;
+    max-height: 370px;
+    height: 370px;
+    flex-shrink: 0;
     gap: 17px;
     display: flex;
     flex-direction: column;  
@@ -62,6 +65,7 @@ body {
     font-family: var(--index-font);
     font-size: 0.8em;
     font-weight: 600;
+    cursor: pointer;
 }
 
 .container-formulario .frm .input-section .input-form {
@@ -83,21 +87,21 @@ body {
     outline: none;
 }
 
-.container-formulario .frm .rememberMe{
+/* .container-formulario .frm .rememberMe{
     display: flex;
     align-items: center;
     gap: 5px;
     padding: 5px 0px;
     cursor: pointer;
     accent-color: var(--dark-blue);
-}
+} */
 
-.container-formulario .frm .rememberMe .rememberMe-text{
+/* .container-formulario .frm .rememberMe .rememberMe-text{
     color: var(--dark-purple);
     font-family: var(--index-font);
     font-size: 0.72em;
     cursor: pointer;
-}
+} */
 
 .input-section .submit-button{
     background: #3e72e2;
@@ -134,12 +138,126 @@ body {
 
 /* ----- */
 
-#div-login{
-    padding-bottom: 13.85em;
-}
-
-/* ----- */
-
 .divOculta{
     display: none;
+}
+
+
+#msgErro{
+    cursor: default;
+    font-family: var(--index-font);
+    font-size: 0.80em;
+    color: brown;
+    box-shadow: 0 4px 8px rgba(152, 95, 213, 0.319);
+    border: 3.2px solid var(--dark-purple);
+    border-radius: 5px;
+    background-color: #ffffff;
+    padding: 8px;
+    margin-top: 65px;
+    max-height: 65px;
+    height: 35px;
+    flex-shrink: 0;
+    display: none;
+    text-align: center;
+}
+#msgSucesso{
+    cursor: default;
+    font-family: var(--index-font);
+    font-size: 0.80em;
+    color: darkgreen;
+    box-shadow: 0 4px 8px rgba(152, 95, 213, 0.319);
+    border: 3.2px solid var(--dark-purple);
+    border-radius: 5px;
+    background-color: #ffffff;
+    padding: 8px;
+    margin-top: 65px;
+    max-height: 65px;
+    height: 35px;
+    flex-shrink: 0;
+    text-align: center;
+    line-height: 35px;
+    display: none;
+}
+
+#msgErroLog{
+    cursor: default;
+    font-family: var(--index-font);
+    font-size: 0.80em;
+    color: brown;
+    box-shadow: 0 4px 8px rgba(152, 95, 213, 0.319);
+    border: 3.2px solid var(--dark-purple);
+    border-radius: 5px;
+    background-color: #ffffff;
+    padding: 8px;
+    margin-top: 110px;
+    max-height: 110px;
+    height: 35px;
+    flex-shrink: 0;
+    display: none;
+    text-align: center;
+}
+#msgSucessoLog{
+    cursor: default;
+    font-family: var(--index-font);
+    font-size: 0.80em;
+    color: darkgreen;
+    box-shadow: 0 4px 8px rgba(152, 95, 213, 0.319);
+    border: 3.2px solid var(--dark-purple);
+    border-radius: 5px;
+    background-color: #ffffff;
+    padding: 8px;
+    margin-top: 110px;
+    max-height: 110px;
+    height: 35px;
+    flex-shrink: 0;
+    text-align: center;
+    line-height: 35px;
+    display: none;
+}
+
+#msgSenhRecup{
+    cursor: default;
+    font-family: var(--index-font);
+    font-size: 0.80em;
+    color: var(--darker-purple);
+    box-shadow: 0 4px 8px rgba(152, 95, 213, 0.319);
+    border: 3.2px solid var(--dark-purple);
+    border-radius: 5px;
+    background-color: #ffffff;
+    padding: 8px;
+    margin-top: 215px;
+    max-height: 215px;
+    height: 35px;
+    flex-shrink: 0;
+    display: none;
+    text-align: center;
+} 
+
+/* Visualizar senha */
+.password-icon {
+    position: relative;
+    width: 100%;
+}
+.password-icon input {
+    padding-right: 40px; /* Espaço para o ícone */
+    width: 100%;
+}
+.password-icon i {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #888;
+    z-index: 10; /* Garante que fique na frente de qualquer coisa */
+    transition: color 0.3s ease;
+}
+.password-icon i:hover {
+    color: var(--dark-purple);
+}
+input[type="password"]::-ms-reveal,
+input[type="password"]::-ms-clear {
+    display: none;
+    visibility: hidden;
+    pointer-events: none;
 }
