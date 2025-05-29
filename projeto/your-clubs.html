@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meus clubes</title>
-    <link rel="stylesheet" href="your-clubs-sec-try.css">  
+    <link rel="stylesheet" href="your-clubs-sec-try.css"> 
+    <link rel="shortcut icon" href="images/child-reading-book_icon-icons.com_49243.ico" type="image/x-icon">
     <script href="your-clubs.js"></script>
 </head>
 <body>
@@ -13,7 +14,7 @@
         <div id="index">
             <div>
                 <hr>
-                <ul>
+                <ul id="pags-site">
                     <a href="">Home</a>
                     <a href="">Perfil</a>
                     <a href="your-clubs.html">Clubes</a>
@@ -23,7 +24,7 @@
             <div>
                 <hr>
                 <ul>
-                    <a href="index-logincad.html">Minha conta</a>
+                    <a href="">Minha conta</a>
                 </ul>
             </div>
         </div>
@@ -31,15 +32,12 @@
     <main>
         <nav>
             <form action="" class="searchbar">
-                    <input type="image" src="images/search-lupe.png" width="45px">
-                    <input type="text" placeholder="Pesquisar um novo clube" id="searchbar-input">
+                    <input type="button" id="lupe-icon" onclick='buscar()'>
+                    <input type="text" placeholder="Pesquisar um novo clube" id="searchbar_input">
             </form>
         </nav>
         <section class="user-clubs">
-            <div class="club-card">
-
-                <label for="nome" class="club-name"></label>
-                
+            <div class="club-card">            
             </div>
         </section>
     </main>

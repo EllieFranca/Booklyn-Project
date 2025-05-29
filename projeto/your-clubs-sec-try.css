@@ -25,6 +25,7 @@ body {
     width: 200px;
     height: 100dvh;
     background-color: var(--dark-purple);
+    background: linear-gradient(180deg,rgba(110, 61, 147, 1) 30%, rgba(62, 20, 103, 1) 100%);
 }
 
 .sidebar hr {
@@ -45,9 +46,15 @@ body {
 }
 
 .sidebar div ul a {
+    font-family: var(--index-font);
     color: white;
     display: flex;
     text-decoration: none;
+}
+#pags-site{
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
 }
 
 main {
@@ -63,18 +70,35 @@ main {
     background-color: var(--dark-blue-transparency);
 }
 
-.searchbar input {
+.searchbar #searchbar_input {
+    width: inherit;
     border: none;
     outline: none;
     color: var(--dark-purple);
+    font-family: var(--index-font);
     background-color: rgba(0, 0, 0, 0);
 }
-
-.searchbar #searchbar-input {
-    width: inherit;
+.searchbar #lupe-icon {
+    background-image: url('images/search-lupe.png');
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    outline: none;
+    width: 45px;
+    height: 45px;
 }
 
 .searchbar input::placeholder {
     color: var(--dark-purple);
     font-size: 115%;
+}
+
+.user-clubs{
+    margin: 40px;
+    height: 75%;
+    width: 85%;
+}
+.club-card{
+    background-color: var(--dark-blue-transparency);
+    border: solid 5px var(--dark-purple);
+    height: 100px;
 }
