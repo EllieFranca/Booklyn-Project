@@ -4,19 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meus clubes</title>
-    <link rel="stylesheet" href="your-clubs.css">
-    <link rel="shortcut icon" href="child-reading-book_icon-icons.com_49243.ico" type="image/x-icon">
+    <link rel="stylesheet" href="your-clubs-sec-try.css">  
     <script href="your-clubs.js"></script>
 </head>
 <body>
-    <input type="text" id="searchbar" placeholder="Pesquise um clube para entrar">
-    <div class="sidebar">
-        <img id="logo" src="src/images/booklyn-logo.png" alt="">
-    </div>
-    <div class="clubes">
-        <div class="club-card">
-
+    <aside class="sidebar">
+        <img src="src/images/booklyn-logo.png" alt="" id="logo">
+        <div id="index">
+            <div>
+                <hr>
+                <ul>
+                    <a href="">Home</a>
+                    <a href="">Perfil</a>
+                    <a href="">Clubes</a>
+                    <a href="">Biblioteca</a>
+                </ul>
+            </div>
+            <div>
+                <hr>
+                <ul>
+                    <a href="">Minha conta</a>
+                </ul>
+            </div>
         </div>
-    </div>   
+    </aside>
+    <main>
+        <nav>
+            <form action="" class="searchbar">
+                    <input type="image" src="src/images/search-lupe.png" width="45px">
+                    <input type="text" placeholder="Pesquisar um novo clube" id="searchbar-input">
+            </form>
+        </nav>
+        <section class="user-clubs">
+            <div class="club-card">
+
+                <label for="nome" class="club-name"></label>
+                
+            </div>
+        </section>
+    </main>
 </body>
 </html>

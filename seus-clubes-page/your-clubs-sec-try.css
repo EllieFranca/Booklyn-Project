@@ -1,0 +1,79 @@
+@import url(https://fonts.googleapis.com/css2?family=Bree+Serif);
+@import url(https://fonts.googleapis.com/css2?family=Inter);
+@import url(https://fonts.googleapis.com/css2?family=Jacques+Francois);
+
+:root {
+    --background-color: #fbfcff;
+    --dark-blue: #315db9;
+    --light-blue: #b9d0ff;
+    --dark-purple: #6e3d93;
+    --darker-purple: #3e1467;
+    --dark-blue-transparency: #315cb91A;
+    --site-font: 'Jacques Francois';
+    --title-font: 'Bree Serif';
+    --index-font: 'Inter';
+}
+
+body {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+}
+
+.sidebar {
+    width: 200px;
+    height: 100dvh;
+    background-color: var(--dark-purple);
+}
+
+.sidebar hr {
+    width: 80%;
+    color: white;
+}
+
+.sidebar #logo {
+    width: calc(100% - 10px);
+    margin: 5px;
+}
+
+#index {
+    height: 80dvh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.sidebar div ul a {
+    color: white;
+    display: flex;
+    text-decoration: none;
+}
+
+main {
+    width: 100dvw;
+}
+
+.searchbar {
+    margin: 40px;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    border-radius: 50px;
+    background-color: var(--dark-blue-transparency);
+}
+
+.searchbar input {
+    border: none;
+    outline: none;
+    color: var(--dark-purple);
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.searchbar #searchbar-input {
+    width: inherit;
+}
+
+.searchbar input::placeholder {
+    color: var(--dark-purple);
+}
