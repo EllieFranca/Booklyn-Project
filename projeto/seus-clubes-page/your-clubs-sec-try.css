@@ -76,4 +76,5 @@ main {
 
 .searchbar input::placeholder {
     color: var(--dark-purple);
+    font-size: 115%;
 }
