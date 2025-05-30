@@ -25,6 +25,7 @@ body {
     width: 200px;
     height: 100dvh;
     background-color: var(--dark-purple);
+    background: linear-gradient(180deg,rgba(110, 61, 147, 1) 0%, rgba(62, 20, 103, 1) 100%);
 }
 
 .sidebar hr {
@@ -69,9 +70,10 @@ main {
     color: var(--dark-purple);
     background-color: rgba(0, 0, 0, 0);
 }
-
-.searchbar #searchbar-input {
-    width: inherit;
+.searchbar #lupe_icon {
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    outline: none;
 }
 
 .searchbar input::placeholder {
