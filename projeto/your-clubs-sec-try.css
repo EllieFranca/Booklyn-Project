@@ -44,7 +44,12 @@ body {
     flex-direction: column;
     justify-content: space-between;
 }
+.sidebar div ul{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 
+}
 .sidebar div ul a {
     color: white;
     display: flex;
@@ -64,7 +69,8 @@ main {
     background-color: var(--dark-blue-transparency);
 }
 
-.searchbar input {
+.searchbar #searchbar_input {
+    width: inherit;
     border: none;
     outline: none;
     color: var(--dark-purple);

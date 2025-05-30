@@ -14,7 +14,8 @@
 //         return pesquisa;
 //         console.log(pesquisa)
 //     }
-function buscar(event){
+ alert ("euu!!")
+function buscar(event) {
     event.preventDefault();
 
     let pesquisa = document.getElementById('searchbar_input');
