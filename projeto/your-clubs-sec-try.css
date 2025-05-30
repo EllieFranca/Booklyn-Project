@@ -8,6 +8,7 @@
     --light-blue: #b9d0ff;
     --dark-purple: #6e3d93;
     --darker-purple: #3e1467;
+    --purple-shadow: #433057a6;
     --dark-blue-transparency: #315cb91A;
     --site-font: 'Jacques Francois';
     --title-font: 'Bree Serif';
@@ -26,6 +27,7 @@ body {
     height: 100dvh;
     background-color: var(--dark-purple);
     background: linear-gradient(180deg,rgba(110, 61, 147, 1) 0%, rgba(62, 20, 103, 1) 100%);
+    box-shadow: 5px 0px 10px var(--purple-shadow);
 }
 
 .sidebar hr {
@@ -51,6 +53,7 @@ body {
 
 }
 .sidebar div ul a {
+    font-family: var(--index-font);
     color: white;
     display: flex;
     text-decoration: none;
@@ -67,6 +70,7 @@ main {
     align-items: center;
     border-radius: 50px;
     background-color: var(--dark-blue-transparency);
+    box-shadow: 3px 3px 10px var(--purple-shadow);
 }
 
 .searchbar #searchbar_input {
