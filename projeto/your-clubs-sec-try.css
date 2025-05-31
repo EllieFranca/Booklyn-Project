@@ -111,5 +111,5 @@ p{
     border: solid var(--dark-purple);
     margin-left: 40px;
     width: 80%;
-    height: 80%;
+    height: fit-content;
 }
