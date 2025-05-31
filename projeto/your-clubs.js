@@ -2,7 +2,16 @@
 
 
 function buscar() {
-    let livros = document.getElementById('searchbar_input').value; //tira o valor escrito no index
+    let livros = document.getElementById('searchbar_input').value;
+    console.clear();
+
+    if(livros == ''){ //Caso não haja nada na barra de pesquisa, a mensagem parece, 
+            document.getElementById('sem_pesquisa').classList.remove('div_oculta')
+            document.getElementById('sem_clubes').classList.add('div_oculta')
+
+    } else {
+        mostrar_lista_pesquisa()
+    }
 
     fetch('https://openlibrary.org/search.json?q='+livros) //pesquisa o valor na api
     .then(
@@ -10,15 +19,21 @@ function buscar() {
             return response.json()
         } //transforma os documentos da api pro formato json
     )
-    .then( data => {
-        data.docs.slice(0,5).forEach((e) =>{
-            console.log(e.author_name)
-            console.log(e.title) 
-        })//pesquisa do jason atributos específicos utilizados, com o slice limitando a pesquisa a 5 elementos
-    })
-    .catch(() => {
-        console.log('Arquivo não encontrado')
-    }
+    .then( 
+        data => {
+            data.docs.slice(0,7).forEach((e) =>{
+                console.log(e.title)
+                console.log(e.author_name)
+            }) //pesquisa do json atributos específicos utilizados, com o slice limitando a pesquisa a 5 elementos
+
+        })
+        .catch(() => {
+            console.log('Arquivo não encontrado')
+        }
     );
 }
-// alert('isso ainda funciona??') 
+
+function mostrar_lista_pesquisa() {
+    document.getElementById('sem_clubes').classList.add('div_oculta')
+    document.getElementById('pesquisa_clubs').classList.remove('div_oculta');
+}
