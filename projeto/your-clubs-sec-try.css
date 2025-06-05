@@ -14,7 +14,8 @@
     --title-font: 'Bree Serif';
     --index-font: 'Inter';
 }
-.div_oculta{
+
+.div_oculta {
     display: none;
 }
 
@@ -29,7 +30,7 @@ body {
     width: 200px;
     height: 100dvh;
     background-color: var(--dark-purple);
-    background: linear-gradient(180deg,rgba(110, 61, 147, 1) 0%, rgba(62, 20, 103, 1) 100%);
+    background: linear-gradient(180deg, rgba(110, 61, 147, 1) 0%, rgba(62, 20, 103, 1) 100%);
     box-shadow: 5px 0px 10px var(--purple-shadow);
 }
 
@@ -49,12 +50,14 @@ body {
     flex-direction: column;
     justify-content: space-between;
 }
-.sidebar div ul{
+
+.sidebar div ul {
     display: flex;
     flex-direction: column;
     gap: 10px;
 
 }
+
 .sidebar div ul a {
     font-family: var(--index-font);
     color: white;
@@ -85,6 +88,7 @@ main {
     color: var(--dark-purple);
     background-color: rgba(0, 0, 0, 0);
 }
+
 .searchbar #lupe_icon {
     background-color: rgba(0, 0, 0, 0);
     border: none;
@@ -96,20 +100,22 @@ main {
     font-size: 115%;
 }
 
-#nome_sessao{
+#nome_sessao {
     font-family: var(--title-font);
-    color:var(--dark-purple);
+    color: var(--dark-purple);
     margin-left: 40px;
 }
 
-p{
-   font-family: var(--index-font); 
-   margin-left: 40px;
+p {
+    font-family: var(--index-font);
+    margin-left: 40px;
 }
 
-.clubes_pesquisados{
+.clubes_pesquisados {
     border: solid var(--dark-purple);
     margin-left: 40px;
     width: 80%;
     height: fit-content;
 }
+
+.club
