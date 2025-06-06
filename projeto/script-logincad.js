@@ -1,6 +1,6 @@
 // Alternar divs
 
-// mostrar div de loguin
+// mostrar div de login
 function mostrarLogin() {
     document.getElementById('div-cadastro').classList.add('divOculta');
     document.getElementById('div-login').classList.remove('divOculta');

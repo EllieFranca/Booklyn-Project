@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meus clubes</title>
-    <link rel="stylesheet" href="your-clubs-sec-try.css">
+    <link rel="stylesheet" href="style-clubs.css">
     <link rel="shortcut icon" href="images/child-reading-book_icon-icons.com_49243.ico" type="image/x-icon">
-    <script src="your-clubs.js"></script>
+    <script src="script-clubs.js"></script>
 </head>
 
 <body>
@@ -27,23 +27,24 @@
             <div>
                 <hr>
                 <ul>
-                    <a href="index-logincad.html">Minha conta</a>
+                    <a href="">Minha conta</a>
                 </ul>
             </div>
         </div>
     </aside>
     <main>
         <nav>
-            <form class="searchbar">
+            <section class="searchbar">
                 <button type="button" id="lupe_icon" onclick="buscar()">
                     <img src="images/search-lupe.png" width="45px" alt="">
                 </button>
                 <input type="text" placeholder="Pesquisar um novo clube" id="searchbar_input">
-            </form>
+            </section>
         </nav>
         <header class="div_oculta" id="mensagem_erro">
             <h2 id="nome_sessao">!Erro!</h2>
-            <p class="mensagem_generica">Houve um erro no site, por favor, seja paciente enquanto resolvemos o problema</p>
+            <p class="mensagem_generica">Houve um erro no site, por favor, seja paciente enquanto resolvemos o problema
+            </p>
         </header>
         <header class="div_oculta" id="sem_pesquisa">
             <h2 id="nome_sessao">Nenhum Resultado</h2>
@@ -53,16 +54,14 @@
             <h2 id="nome_sessao">Seus clubes</h2>
             <p class="mensagem_generica">Você ainda não entrou em nenhum clube</p>
         </header>
+        
         <section class="clubes_pesquisados div_oculta" id="pesquisa_clubs">
             <p class="mensagem_generica">Resultados:</p>
-            <div id="area_resultados">
-                
-            </div>
+            <div id="area_resultados"></div>
         </section>
 
         <section class="user-clubs div_oculta">
-            <div class="club_card">
-            </div>
+            <div class="club_card"></div>
         </section>
     </main>
 </body>

@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Inter', sans-serif;
+    background-color: #FBFCFF;
+    display: flex;
+    height: 100vh;
+  }
+  
+  .container {
+    display: flex;
+    width: 100%;
+  }
+  
+  /* Sidebar */
+  .sidebar {
+    position: relative;
+    width: 130px;
+    background: linear-gradient(to bottom, #6E3D9E, #3E1467);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+  }
+  
+  .logo {
+    width: 76px;
+    height: 106px;
+    background-color: #315DB9;
+    color: #fff;
+    font-family: 'Jacques Francois', serif;
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid white;
+    border-radius: 4px;
+    margin-bottom: 20px;
+  }
+  
+  .line {
+    width: 86px;
+    height: 4px;
+    background-color: white;
+    margin: 40px 0;
+  }
+  
+  .line:last-of-type {
+    position: absolute;
+    bottom: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
+  }
+  
+  /* Main profile content */
+  .profile {
+    flex: 1;
+    padding: 30px;
+    position: relative;
+  }
+  
+  .banner {
+    height: 250px;
+    background-color: #B9D0FF;
+    border: 2px solid #6E3D9E;
+    border-radius: 4px;
+    margin: 0 30px 40px 0;
+  }
+  
+  .profile-box {
+    position: relative;
+    margin-left: 20px;
+  }
+  
+  .avatar {
+    width: 140px;
+    height: 140px;
+    background-color: #E6D3FF;
+    border: 2px solid #6E3D9E;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    position: absolute;
+    top: -70px;
+    left: 20px;
+    z-index: 10;
+  }
+  
+  .avatar::before {
+    content: '\1F464';
+    font-size: 60px;
+    color: #6E3D9E;
+  }
+  
+  .user-info {
+    margin-left: 180px;
+  }
+  
+  .nickname {
+    font-family: 'Bree Serif', serif;
+    color: #6E3D9E;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .username {
+    color: #6E3D9E;
+    font-size: 14px;
+  }
+  
+  .description {
+    margin-top: 10px;
+    color: #6E3D9E;
+    font-size: 14px;
+  }
+  
+  /* Botão de edição */
+  #edit-btn {
+    margin-left: 180px;
+    margin-top: 20px;
+    padding: 8px 16px;
+    background-color: #6E3D9E;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+  }
+  
+  #edit-btn:hover {
+    background-color: #3E1467;
+  }
+  
+  /* Estilo dos inputs no modo de edição */
+  .input-edit {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    padding: 6px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 6px;
+    color: #6E3D9E;
+    width: 100%;
+    max-width: 400px;
+  }
