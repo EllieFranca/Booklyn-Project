@@ -7,7 +7,6 @@
     <title>Meus clubes</title>
     <link rel="stylesheet" href="style-clubs.css">
     <link rel="shortcut icon" href="images/child-reading-book_icon-icons.com_49243.ico" type="image/x-icon">
-    <script src="script-clubs.js"></script>
 </head>
 
 <body>
@@ -41,29 +40,37 @@
                 <input type="text" placeholder="Pesquisar um novo clube" id="searchbar_input">
             </section>
         </nav>
+
         <header class="div_oculta" id="mensagem_erro">
             <h2 id="nome_sessao">!Erro!</h2>
             <p class="mensagem_generica">Houve um erro no site, por favor, seja paciente enquanto resolvemos o problema
             </p>
         </header>
+
         <header class="div_oculta" id="sem_pesquisa">
             <h2 id="nome_sessao">Nenhum Resultado</h2>
             <p class="mensagem_generica">Tente fazer uma busca na barra de pesquisa</p>
         </header>
-        <header id="sem_clubes">
+
+        <section class="div_oculta" id="user_clubs">
+        </section>
+
+        <header class="" id="sem_clubes">
             <h2 id="nome_sessao">Seus clubes</h2>
             <p class="mensagem_generica">Você ainda não entrou em nenhum clube</p>
         </header>
-        
+
         <section class="clubes_pesquisados div_oculta" id="pesquisa_clubs">
             <p class="mensagem_generica">Resultados:</p>
             <div id="area_resultados"></div>
+            <a href="index-clubs.html">
+                <img src="images/arrow_back_icon_151627.png" alt="" width="30px" style="margin-left: 10px;">
+            </a>
         </section>
-
-        <section class="user-clubs div_oculta">
-            <div class="club_card"></div>
-        </section>
+        
+        
     </main>
+    <script src="script-clubs.js"></script>
 </body>
 
 </html>

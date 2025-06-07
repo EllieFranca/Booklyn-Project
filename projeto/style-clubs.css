@@ -140,12 +140,45 @@ main {
     font-family: var(--title-font);
     color: var(--dark-purple);
     margin-left: 20px;
-    margin-top: 5px;
+    margin-top: 10px;
     margin-bottom: 0;
 }
 .club_card p{
     font-family: var(--index-font);
-    color: var(--index-font);
+    font-size: 14px;
+    font-weight: 1000;
+    color: var(--darker-purple);
+    margin-left: 20px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.grupo_clubes{
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 40px;
+    gap: 10px;
+    width: 80%;
+    display: flex;
+}
+.club_card_inicio{
+    width: 90%;
+    height: 70px;
+    border: solid var(--dark-purple);
+    background-color: var(--dark-blue-transparency);
+}
+.club_card_inicio h3{
+    font-family: var(--title-font);
+    color: var(--dark-purple);
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+.club_card_inicio p{
+    font-family: var(--index-font);
+    font-size: 14px;
+    font-weight: 1000;
+    color: var(--darker-purple);
     margin-left: 20px;
     margin-top: 0;
     margin-bottom: 0;

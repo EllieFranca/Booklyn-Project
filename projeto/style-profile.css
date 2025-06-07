@@ -1,3 +1,20 @@
+@import url(https://fonts.googleapis.com/css2?family=Bree+Serif);
+@import url(https://fonts.googleapis.com/css2?family=Inter);
+@import url(https://fonts.googleapis.com/css2?family=Jacques+Francois);
+
+:root {
+    --background-color: #fbfcff;
+    --dark-blue: #315db9;
+    --light-blue: #b9d0ff;
+    --dark-purple: #6e3d93;
+    --darker-purple: #3e1467;
+    --purple-shadow: #433057a6;
+    --dark-blue-transparency: #315cb91A;
+    --site-font: 'Jacques Francois';
+    --title-font: 'Bree Serif';
+    --index-font: 'Inter';
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -5,7 +22,7 @@
   }
   
   body {
-    font-family: 'Inter', sans-serif;
+    font-family: var(--index-font);
     background-color: #FBFCFF;
     display: flex;
     height: 100vh;
@@ -32,7 +49,7 @@
     height: 106px;
     background-color: #315DB9;
     color: #fff;
-    font-family: 'Jacques Francois', serif;
+    font-family: var(--site-font);
     font-size: 40px;
     display: flex;
     align-items: center;
@@ -104,7 +121,7 @@
   }
   
   .nickname {
-    font-family: 'Bree Serif', serif;
+    font-family: var(--title-font);
     color: #6E3D9E;
     font-size: 24px;
     font-weight: bold;
@@ -131,7 +148,7 @@
     border: none;
     border-radius: 6px;
     cursor: pointer;
-    font-family: 'Inter', sans-serif;
+    font-family: var(--index-font);
     font-size: 14px;
   }
   
@@ -141,7 +158,7 @@
   
   /* Estilo dos inputs no modo de edição */
   .input-edit {
-    font-family: 'Inter', sans-serif;
+    font-family: var(--index-font);
     font-size: 14px;
     padding: 6px;
     border: 1px solid #ccc;
