@@ -17,16 +17,22 @@
                 <hr>
                 <ul>
                     <a href="">Home</a>
-                    <a href="">Perfil</a>
-                    <a href="your-clubs.html">Clubes</a>
+                    <a href="index-profile.html">Perfil</a>
+                    <a href="index-clubs.html">Clubes</a>
                     <a href="">Biblioteca</a>
-                    <a href="index-logincad.html">Cadastro (temporario)</a>
                 </ul>
             </div>
             <div>
                 <hr>
                 <ul>
-                    <a href="">Minha conta</a>
+                    <a id="minha_conta" onclick="mostrar_modal(event)">Minha conta</a>
+                </ul>
+            </div>
+            <div id="modal_minha_conta" style="display:none;">
+                <ul>
+                    <a href=""> Modo ADM</a>
+                    <a href="index-logincad.html">Deslogar</a>
+                    <a onclick="fechar_modal(event)">Fechar</a>
                 </ul>
             </div>
         </div>
@@ -67,8 +73,8 @@
                 <img src="images/arrow_back_icon_151627.png" alt="" width="30px" style="margin-left: 10px;">
             </a>
         </section>
-        
-        
+
+
     </main>
     <script src="script-clubs.js"></script>
 </body>
