@@ -1,43 +1,69 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Perfil - Booklyn</title>
+  <link rel="shortcut icon" href="images/child-reading-book_icon-icons.com_49243.ico" type="image/x-icon">
 
   <!-- Fontes externas -->
-  <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Inter&family=Jacques+Francois&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Inter&family=Jacques+Francois&display=swap"
+  rel="stylesheet">
+    
 
   <!-- CSS externo -->
   <link rel="stylesheet" href="style-profile.css">
 </head>
+
 <body>
-  <div class="container">
-    <!-- Sidebar com logo e linhas -->
-    <aside class="sidebar">
-      <div class="logo">B</div>
-      <div class="line"></div>
-      <div class="line"></div>
-    </aside>
-
-    <!-- Conteúdo principal -->
-    <main class="profile">
-      <div class="banner"></div>
-
-      <div class="profile-box">
-        <div class="avatar"></div>
-        <div class="user-info">
-          <h2 class="nickname" data-field="nickname">Nickname</h2>
-          <p class="username" data-field="username">Nome de usuário</p>
-          <p class="description" data-field="description">Escreva uma descrição aqui.</p>
-        </div>
+  <!-- Sidebar com logo e linhas -->
+  <aside class="sidebar">
+    <img src="images/booklyn-logo.png" alt="" id="logo">
+    <div id="index">
+      <div>
+        <hr>
+        <ul>
+          <a href="">Home</a>
+          <a href="index-profile.html">Perfil</a>
+          <a href="index-clubs.html">Clubes</a>
+          <a href="">Biblioteca</a>
+        </ul>
       </div>
+      <div>
+        <hr>
+        <ul>
+          <a id="minha_conta" onclick="mostrar_modal(event)">Minha conta</a>
+        </ul>
+      </div>
+      <div id="modal_minha_conta" style="display:none;">
+        <ul>
+          <a href="index-adm.html"> Modo ADM</a>
+          <a href="index-logincad.html">Deslogar</a>
+          <a onclick="fechar_modal(event)">Fechar</a>
+        </ul>
+      </div>
+    </div>
+  </aside>
 
-      <button id="edit-btn">Editar Perfil</button>
-    </main>
-  </div>
+  <!-- Conteúdo principal -->
+  <main class="profile">
+    <div class="banner"></div>
+
+    <div class="profile-box">
+      <div class="avatar"></div>
+      <div class="user-info">
+        <h2 class="nickname" data-field="nickname">Nickname</h2>
+        <p class="username" data-field="username">Nome de usuário</p>
+        <p class="description" data-field="description">Escreva uma descrição aqui.</p>
+      </div>
+    </div>
+
+    <button id="edit-btn">Editar Perfil</button>
+  </main>
 
   <!-- JS -->
   <script src="script-profile.js"></script>
 </body>
+
 </html>

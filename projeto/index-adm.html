@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modo ADM</title>
+    <link rel="stylesheet" href="style-adm.css">
+    <link rel="shortcut icon" href="images/child-reading-book_icon-icons.com_49243.ico" type="image/x-icon">
+</head>
+
+<body>
+    <aside class="sidebar">
+        <img src="images/booklyn-logo.png" alt="" id="logo">
+        <div id="index">
+            <div>
+                <hr>
+                <ul>
+                    <a href="">Home</a>
+                    <a href="index-profile.html">Perfil</a>
+                    <a href="index-clubs.html">Clubes</a>
+                    <a href="">Biblioteca</a>
+                </ul>
+            </div>
+            <div>
+                <hr>
+                <ul>
+                    <a id="minha_conta" onclick="mostrar_modal(event)">Minha conta</a>
+                </ul>
+            </div>
+            <div id="modal_minha_conta" style="display:none;">
+                <ul>
+                    <a href="index-adm.html"> Modo ADM</a>
+                    <a href="index-logincad.html">Deslogar</a>
+                    <a onclick="fechar_modal(event)">Fechar</a>
+                </ul>
+            </div>
+        </div>
+    </aside>
+    <main>
+
+        <nav>
+            <form action="" class="searchbaruser">
+                <input type="image" src="images/search-lupe.png" width="45px">
+                <input type="text" placeholder="Encontrar um usuário" id="searchbaruser-input">
+            </form>
+        </nav>
+        <div>
+
+            <table id="table">
+
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Email</th>
+                        <th>Senha</th>
+                        <th>Telefone</th>
+                        <th>Idade</th>
+                        <th>Editar/Excluir</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        </div>
+    </main>
+    <script src="script-adm.js"></script>
+</body>
+
+</html>

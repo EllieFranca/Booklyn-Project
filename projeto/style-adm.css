@@ -1,0 +1,151 @@
+@import url(https://fonts.googleapis.com/css2?family=Bree+Serif);
+@import url(https://fonts.googleapis.com/css2?family=Inter);
+@import url(https://fonts.googleapis.com/css2?family=Jacques+Francois);
+
+:root {
+    --background-color: #fbfcff;
+    --dark-blue: #315db9;
+    --light-blue: #b9d0ff;
+    --dark-purple: #6e3d93;
+    --darker-purple: #3e1467;
+    --purple-shadow: #433057a6;
+    --dark-blue-transparency: #315cb91A;
+    --site-font: 'Jacques Francois';
+    --title-font: 'Bree Serif';
+    --index-font: 'Inter';
+}
+
+body {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+}
+
+.sidebar {
+    width: 200px;
+    height: 100dvh;
+    background: linear-gradient(180deg, rgba(110, 61, 147, 1) 0%, rgba(62, 20, 103, 1) 100%);
+    box-shadow: 5px 0px 10px var(--purple-shadow);
+}
+
+.sidebar hr {
+    border: 1px solid white;
+    width: 80%;
+    color: white;
+}
+
+.sidebar #logo {
+    width: calc(100% - 10px);
+    margin: 5px;
+}
+
+#index {
+    width: 200px;
+    height: calc(100dvh - 135px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.sidebar div ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+.sidebar div ul a {
+    font-family: var(--index-font);
+    color: white;
+    display: flex;
+    text-decoration: none;
+}
+
+main {
+    width: 100dvw;
+}
+
+.searchbaruser {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 40px;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    border-radius: 50px;
+    background-color: var(--dark-blue-transparency);
+    box-shadow: 3px 3px 10px var(--purple-shadow);
+}
+
+.searchbaruser input {
+    border: none;
+    outline: none;
+    color: var(--dark-purple);
+    background-color: rgba(0, 0, 0, 0);
+
+}
+
+.searchbaruser #searchbar-input {
+    width: inherit;
+}
+
+.searchbaruser input::placeholder {
+    color: var(--dark-purple);
+    font-size: 115%;
+}
+
+table {
+    border-collapse: collapse;
+    width: 80%;
+    max-width: 900px;
+    /* opcional, limite de largura */
+    margin: 40px auto;
+    /* centraliza horizontalmente */
+    font-family: var(--index-font);
+    color: var(--dark-purple);
+}
+
+th, td {
+    border: 1px solid var(--darker-purple);
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    background-color: var(--dark-blue-transparency);
+}
+
+.editar-btn, .excluir-btn {
+    background-color: var(--dark-purple);
+    border: solid 3px var(--dark-purple);
+    border-radius: 10px;
+    color: white;
+    
+}
+
+#modal_minha_conta {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    top: 75%;
+    left: 225px;
+    width: 100px;
+    height: 100px;
+    background-color: var(--background-color);
+    box-shadow: 3px 3px 10px var(--purple-shadow);
+    border-radius: 10px;
+    z-index: 1000;
+}
+
+#modal_minha_conta ul {
+    margin: 0;
+    padding: 0;
+}
+
+#modal_minha_conta a {
+    font-family: var(--index-font);
+    color: var(--dark-purple);
+}

@@ -29,7 +29,6 @@ body {
 .sidebar {
     width: 200px;
     height: 100dvh;
-    background-color: var(--dark-purple);
     background: linear-gradient(180deg, rgba(110, 61, 147, 1) 0%, rgba(62, 20, 103, 1) 100%);
     box-shadow: 5px 0px 10px var(--purple-shadow);
 }
@@ -46,7 +45,8 @@ body {
 }
 
 #index {
-    height: 80dvh;
+    width: 200px;
+    height: calc(100dvh - 135px);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -197,7 +197,7 @@ main {
     justify-content: center;
     padding: 20px;
     top: 75%;
-    left: 200px;
+    left: 225px;
     width: 100px;
     height: 100px;
     background-color: var(--background-color);
@@ -221,6 +221,7 @@ main {
     display: flex;
     align-items: center;
     flex-direction: column;
+    width: 500px;
     top: 25%;
     left: 30%;
     z-index: 1000;
@@ -234,6 +235,7 @@ main {
     font-family: var(--title-font);
     color: var(--dark-purple);
     text-shadow: 0px 1px 3px var(--purple-shadow);
+    text-align: center;
 }
 
 #modal_remover_clube div {
@@ -245,6 +247,42 @@ main {
 }
 
 #modal_remover_clube div p {
+    font-family: var(--index-font);
+    color: var(--darker-purple);
+    font-weight: 1000;
+}
+
+#modal_adicionar_clube {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 500px;
+    top: 25%;
+    left: 30%;
+    z-index: 1000;
+    background-color: var(--background-color);
+    box-shadow: 3px 3px 10px var(--purple-shadow);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+#modal_adicionar_clube h1 {
+    font-family: var(--title-font);
+    color: var(--dark-purple);
+    text-shadow: 0px 1px 3px var(--purple-shadow);
+    text-align: center;
+}
+
+#modal_adicionar_clube div {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    width: 50%;
+
+}
+
+#modal_adicionar_clube div p {
     font-family: var(--index-font);
     color: var(--darker-purple);
     font-weight: 1000;

@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style-logincad.css">
-    <link rel="shortcut icon" href="images/child-reading-book_icon-icons.com_49243.ico" type="image/x-icon">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="child-reading-book_icon-icons.com_49243.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css ">
     <title>Login Page</title>
 </head>
@@ -17,15 +16,23 @@
         </article>
         <form id="form1" class="frm" action="">
             <section class="input-section">
-                <label for="nome1" class="label-nome" id="label-nome">Nome: </label>
+                <label for="nome1" class="label-user" id="label-nome">Nome: </label>
                 <input type="text" name="text" id="nome1" class="input-form" placeholder="Digite um nome para o seu perfil" required>
             </section>
             <section class="input-section">
-                <label for="email1" class="label-nome" id="label-email">E-mail: </label>
+                <label for="email1" class="label-user" id="label-email">E-mail: </label>
                 <input type="email" name="email" id="email1" class="input-form" placeholder="Digite seu e-mail" required>
             </section>
             <section class="input-section">
-                <label for="password1" class="label-nome" id="label-senha">Senha: </label>
+                <label for="idade" class="label-user" id="label-idade">Idade: </label>
+                <input type="number" name="idade" id="idade" class="input-form" placeholder="Digite sua idade" required min="10" max="150">
+            </section>
+            <section class="input-section">
+                <label for="telefone" class="label-user" id="label-tel">Telefone: </label>
+                <input type="tel" id="telefone" name="telefone" class="input-form" placeholder="(XX) XXXXX-XXXX" required>
+            </section>
+            <section class="input-section">
+                <label for="password1" class="label-user" id="label-senha">Senha: </label>
                 <div class="password-icon" id="password-icon-cad">
                     <input type="password" name="password" id="password1" class="input-form" placeholder="Digite sua senha" required>
                     <i class="fa fa-eye" aria-hidden="true"></i>
@@ -51,11 +58,11 @@
         </article>
         <form id="form2" class="frm" action="">
             <section class="input-section">
-                <label for="email2" class="label-nome" id="label-email2">E-mail: </label>
+                <label for="email2" class="label-user" id="label-email2">E-mail: </label>
                 <input type="email" name="email" id="email2" class="input-form" placeholder="Digite seu e-mail" required>
             </section>
             <section class="input-section">
-                <label for="password2" class="label-nome" id="label-senha2">Senha: </label>
+                <label for="password2" class="label-user" id="label-senha2">Senha: </label>
                 <div class="password-icon" id="password-icon-log">
                     <input type="password" name="password" id="password2" class="input-form" placeholder="Digite sua senha" required>
                     <i class="fa fa-eye" aria-hidden="true"></i>
@@ -85,7 +92,7 @@
         </article>
         <form id="form3" class="frm" action="">
             <section class="input-section">
-                <label for="email3" class="label-nome">E-mail: </label>
+                <label for="email3" class="label-user">E-mail: </label>
                 <input type="email" name="email" id="email3" class="input-form" placeholder="Digite seu e-mail" required>
             </section>
         

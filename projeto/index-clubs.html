@@ -30,7 +30,7 @@
             </div>
             <div id="modal_minha_conta" style="display:none;">
                 <ul>
-                    <a href=""> Modo ADM</a>
+                    <a href="index-adm.html"> Modo ADM</a>
                     <a href="index-logincad.html">Deslogar</a>
                     <a onclick="fechar_modal(event)">Fechar</a>
                 </ul>
@@ -77,6 +77,20 @@
 
     </main>
     <script src="script-clubs.js"></script>
+    <div id="modal_remover_clube" style="display:none;">
+        <h1 id="texto_alerta1">Deseja realmente remover este clube?</h1>
+        <div>
+            <p id="sim">Sim</p>
+            <p id="nao">Não</p>
+            <p id="fechar1" style="display: none;">Fechar</p>
+        </div>
+    </div>
+    <div id="modal_adicionar_clube" style="display:none;">
+        <h1 id="texto_alerta2"></h1>
+        <div>
+            <p id="fechar2" style="display: none;">Fechar</p>
+        </div>
+    </div>
 </body>
 
 </html>

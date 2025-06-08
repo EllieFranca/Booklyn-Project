@@ -13,7 +13,7 @@
    --index-font:'Inter';
 }
 
-body {
+body{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -31,13 +31,28 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     width: 300px;
     max-width: 90%;
+    min-height: 370px;
     max-height: 370px;
-    height: 370px;
+    height: auto;
     flex-shrink: 0;
     gap: 17px;
     display: flex;
     flex-direction: column;  
     padding-bottom: 12em;
+}
+
+#div-cadastro{
+    overflow-y: auto;
+}
+#div-cadastro::-webkit-scrollbar {
+    width: 4px;
+}
+#div-cadastro::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 7px;
+}
+#div-cadastro::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
 }
 
 .title h1{
@@ -61,7 +76,7 @@ body {
     padding: 10px 0px;
 }
 
-.container-formulario .frm .input-section .label-nome{
+.container-formulario .frm .input-section .label-user{
     font-family: var(--index-font);
     font-size: 0.8em;
     font-weight: 600;
@@ -86,22 +101,6 @@ body {
     background-color: var(--background-color);
     outline: none;
 }
-
-/* .container-formulario .frm .rememberMe{
-    display: flex;
-    align-items: center;
-    gap: 5px;
-    padding: 5px 0px;
-    cursor: pointer;
-    accent-color: var(--dark-blue);
-} */
-
-/* .container-formulario .frm .rememberMe .rememberMe-text{
-    color: var(--dark-purple);
-    font-family: var(--index-font);
-    font-size: 0.72em;
-    cursor: pointer;
-} */
 
 .input-section .submit-button{
     background: #3e72e2;
@@ -141,7 +140,6 @@ body {
 .divOculta{
     display: none;
 }
-
 
 #msgErro{
     cursor: default;
@@ -239,7 +237,7 @@ body {
     width: 100%;
 }
 .password-icon input {
-    padding-right: 40px; /* Espaço para o ícone */
+    padding-right: 40px;
     width: 100%;
 }
 .password-icon i {
