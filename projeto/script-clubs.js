@@ -44,6 +44,9 @@ if (localStorage.length > 0) {
                     document.getElementById('fechar1').addEventListener('click', () => {
                         document.getElementById('modal_remover_clube').setAttribute('style','display:none;')
                     })
+                setTimeout(() => {
+                    window.location.reload();
+                }, 1000);
                 }
             })
 
