@@ -56,6 +56,7 @@ function mostrar_modal(event) {
     event.preventDefault()
     document.getElementById('modal_minha_conta').removeAttribute('style', 'display:none;')
 }
+
 function fechar_modal(event) {
     event.preventDefault()
     document.getElementById('modal_minha_conta').setAttribute('style', 'display:none;')

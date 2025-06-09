@@ -312,8 +312,8 @@ function logar(event) {
         msgSucessoLog.innerHTML = 'Logando... Seja bem-vindo!';
         setTimeout(() => {
             // redireciona para a página Home
-            window.location.href = 'index-clubs.html';
-        }, 1000);
+            window.location.href = 'index-homepage.html';
+        }, 1000);d
         limparCampos()
     } else {
         //buscar o cadastro dos usuários no localStorage

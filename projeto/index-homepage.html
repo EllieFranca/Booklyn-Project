@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <!-- import fonte do google-->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Jacques+Francois&family=Bree+Serif:wght@400;700&family=Inter:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style-homepage.css">
+    <link rel="shortcut icon" href="images/child-reading-book_icon-icons.com_49243.ico" type="image/x-icon">
+</head>
+
+<body>
+    <div class="menulateral">
+        <div class="logo">
+            <div class="logo-box">
+                <h1>Booklyn</h1>
+            </div>
+        </div>
+        <!-- links com outras pagins, substituir # pelo nome do arquivo(html)-->
+        <nav class="menu">
+            <ul>
+                <li><a href="index-homepage.html" class="botoes">Home</a></li>
+                <li><a href="index-profile.html" class="botoes">Perfil</a></li>
+                <li><a href="index-clubs.html" class="botoes">Clubes</a></li>
+            </ul>
+        </nav>
+        <div class="conta">
+            <a id="minha_conta" onclick="mostrar_modal(event)">Minha conta</a>
+        </div>
+        <div id="modal_minha_conta" style="display:none;">
+            <ul>
+                <a href="index-adm.html"> Modo ADM</a>
+                <a href="index-logincad.html">Deslogar</a>
+                <a onclick="fechar_modal(event)">Fechar</a>
+            </ul>
+        </div>
+    </div>
+    <div class="conteudo">
+        <section class="clubes">
+            <h2 class="titulos">> Seus Clubes</h2>
+            <div class="container">
+                <div class="card" onclick="mostrarInfoLivro(this)">
+                    <img src="" alt="Capa do livro">
+                </div>
+                <div class="card" onclick="mostrarInfoLivro(this)">
+                    <img src="" alt="Capa do livro">
+                </div>
+                <div class="card" onclick="mostrarInfoLivro(this)">
+                    <img src="" alt="Capa do livro">
+                </div>
+                <div class="card" onclick="mostrarInfoLivro(this)">
+                    <img src="" alt="Capa do livro">
+                </div>
+                <div class="card" onclick="mostrarInfoLivro(this)">
+                    <img src="" alt="Capa do livro">
+                </div>
+                <div class="card" onclick="mostrarInfoLivro(this)">
+                    <img src="" alt="Capa do livro">
+                </div>
+            </div>
+        </section>
+        <div class="divisor"></div>
+        <section class="clubes">
+            <h2 class="titulos">> Sua Biblioteca</h2>
+            <div class="container">
+                <div class="card" onclick="mostrarInfoLivro(this)">
+                    <img src="" alt="Capa do livro">
+                </div>
+                <div class="card" onclick="mostrarInfoLivro(this)">
+                    <img src="" alt="Capa do livro">
+                </div>
+                <div class="card" onclick="mostrarInfoLivro(this)">
+                    <img src="" alt="Capa do livro">
+                </div>
+                <div class="card" onclick="mostrarInfoLivro(this)">
+                    <img src="" alt="Capa do livro">
+                </div>
+                <div class="card" onclick="mostrarInfoLivro(this)">
+                    <img src="" alt="Capa do livro">
+                </div>
+                <div class="card" onclick="mostrarInfoLivro(this)">
+                    <img src="" alt="Capa do livro">
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div id="modalLivro" class="modal">
+        <div class="modal-conteudo">
+            <span class="fechar" onclick="fecharModal()">&times;</span>
+            <div id="infoLivro">
+                <h3 id="tituloLivro"></h3>
+                <p id="autorLivro"></p>
+                <p id="anoLivro"></p>
+            </div>
+        </div>
+    </div>
+    <script src="script-homepage.js"></script>
+</body>
+
+</html>

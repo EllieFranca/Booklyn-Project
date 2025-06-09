@@ -64,6 +64,7 @@ body {
     color: white;
     display: flex;
     text-decoration: none;
+    cursor: pointer;
 }
 
 main {
