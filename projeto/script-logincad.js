@@ -313,7 +313,7 @@ function logar(event) {
         setTimeout(() => {
             // redireciona para a página Home
             window.location.href = 'index-homepage.html';
-        }, 1000);d
+        }, 1000);
         limparCampos()
     } else {
         //buscar o cadastro dos usuários no localStorage
